@@ -3,18 +3,25 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/preset-react": "^7.8.3",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "babel-loader": "^8.0.6",
+    "fs": "0.0.1-security",
+    "fs-extra": "^8.1.0",
+    "path": "^0.12.7",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-scripts": "3.3.1"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "build": "react-scripts build && npm run build:clean",
+    "compile": "(rm -rf ../static/* ) && (react-scripts build) && (cp -rv build/* ../static/)"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -31,5 +38,8 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "webpack-cli": "^3.3.10"
+  }
 }

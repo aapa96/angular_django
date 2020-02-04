@@ -1,4 +1,4 @@
-#!/Users/alexparedesaranzamendi/Desktop/code/angular_django/.env/bin/python3
+#!/Users/alexparedesaranzamendi/Desktop/code/angular_django/env/bin/python3.7
 from django.core import management
 
 if __name__ == "__main__":
