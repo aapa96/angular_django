@@ -1,2 +1,0 @@
-# angular_django
-Plantilla
